@@ -199,7 +199,7 @@ class WP_Migrate_DB_Pro_Tweaks {
 	 * Default is 100
 	 */
 	function rows_per_segment( $rows ) {
-		return 50;
+		return 1000;
 	}
 
 	/**
