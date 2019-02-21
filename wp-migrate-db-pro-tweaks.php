@@ -35,9 +35,9 @@ class WP_Migrate_DB_Pro_Tweaks {
 		//add_filter( 'wpmdb_hide_safe_mode_warning', array( $this, 'hide_safe_mode_warning' ) );
 		//add_filter( 'wpmdb_create_table_query', array( $this, 'create_table_query' ), 10, 2 );
 		//add_filter( 'wpmdb_rows_where', array( $this, 'rows_where' ), 10, 2 );
-		//add_filter( 'wpmdb_rows_per_segment', array( $this, 'rows_per_segment' ) );
+		add_filter( 'wpmdb_rows_per_segment', array( $this, 'rows_per_segment' ) );
 		//add_filter( 'wpmdb_alter_table_name', array( $this, 'alter_table_name' ) );
-		//add_filter( 'wpmdb_prepare_remote_connection_timeout', array( $this, 'prepare_remote_connection_timeout' ) );
+		add_filter( 'wpmdb_prepare_remote_connection_timeout', array( $this, 'prepare_remote_connection_timeout' ) );
 		//add_filter( 'admin_menu', array( $this, 'remove_menu_item' ) );
 		//add_filter( 'wpmdb_domain_replaces', array( $this, 'add_additional_domain_replaces' ) );
 		//add_filter( 'wpmdb_pre_recursive_unserialize_replace', array( $this, 'pre_recursive_unserialize_replace' ), 10, 3 );
